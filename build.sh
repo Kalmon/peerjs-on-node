@@ -17,6 +17,7 @@ cd ../
 
 # Append some of our modifications onto the built peerjs code
 cat patch/header_patch.js dist/peerjs.min.js patch/footer_patch.js > dist/peerjs-on-node.js
+cat patch/file_reader.js > dist/file_reader.js
 rm dist/peerjs.min.js
 
 echo "Done. dist/peerjs-on-node.js"
